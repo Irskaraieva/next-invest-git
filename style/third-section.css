@@ -1,0 +1,179 @@
+/*   third section*/
+.graph {
+    width: 100%;
+
+    position: relative;
+    background-color: #ECF4FD;  
+}
+
+.graph-group-img {
+    position: absolute;
+    top: 0;
+    right: 4%;
+}
+
+.graph-group-points {
+    position: absolute;
+    right: 7%;
+    bottom: 28%;
+}
+
+.graph-wave-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.graph__container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 376px;
+    margin: 5% auto;
+    align-items: center;
+    font-family: 'Josefin Sans';
+}
+
+.graph__container__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 40px;
+}
+
+.graph__container__left h3 {
+    color: #333333;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.graph__container__left p {
+    color: #999999;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.graph__container__left-arrow {
+    width: 56px;
+    height: 56px;
+}
+
+.graph-img {
+    width: 570px;
+    height: 335px;
+}
+
+@media (max-width: 1460px) {
+
+    .graph-wave-img {
+        width: 420px;
+        height: 320px;
+    }
+
+    .graph__container {      
+        padding: 0 15px;
+    }
+
+    .graph__container__left-arrow{
+        width: 45px;
+        height: 45px;
+    }
+
+    .graph__container__left h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .graph__container__leftp {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .graph-img {
+        width: 44%;
+        height: auto;
+    }
+
+    .graph-group-points {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1150px) {
+   
+    .graph-wave-img {
+        width: 320px;
+        height: 220px;
+    }
+
+    .graph-group-img {
+        width: 100px;
+    }   
+}
+
+@media (max-width: 750px) {
+
+    .graph-group-img {
+        width: 70px;
+    }
+
+    .graph__container__left {
+        gap: 20px;
+    }
+
+    .graph__container__left h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .graph__container__left p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 513px) {
+
+    .graph {
+       height: 480px;
+    }
+
+    .graph__container__left-arrow {
+        width: 32px;
+        height: auto;
+    }
+
+    .graph__container {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        height: 100%;
+    }
+
+    .graph__container__left h3 {
+        font-size: 22px;       
+        line-height: 30px;
+    }
+
+    .graph__container__left p {
+        font-size: 12px;        
+    }
+
+    .graph__container__left {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .graph-img {
+        width: 320px;
+        margin-left: -10%;
+        margin-bottom: 10px;
+    }
+
+    .graph-wave-img {
+        width: 240px;
+        height: 220px;
+    }
+}
+

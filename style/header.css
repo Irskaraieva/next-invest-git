@@ -1,0 +1,247 @@
+/*   Header    */
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 0 1px 6px rgba(180, 179, 179, 0.2);
+}
+
+.header__container {
+    position: relative;
+    padding: 0px 15px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #128C76;
+    transition: .3s;
+}
+
+.header__logo:hover {
+    color: #0d6857;
+}
+
+.header__menu {
+    font-size: 16px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav__links > li {
+    position: relative;
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(80, 79, 79);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    max-height: 200px;
+  overflow-y: auto;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden span:hover {
+    color: #128C76;
+    border-bottom: 1px solid rgba(0, 0, 0,  #128C76);
+}
+
+.hidden span {
+    padding-top: 15px;
+    color: black;
+    transition: .3s;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.investment,
+.how__it__works,
+.about__us {
+    transition: .3s;
+}
+
+.investment:hover,
+.how__it__works:hover,
+.about__us:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.header__btns {
+    display: flex;
+    gap: 30px;
+}
+
+.login {
+    width: 135px;
+    height: 54px;
+    background: #128C76;
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    border-radius: 1px;
+    transition: .3s;
+}
+
+.login:hover {
+    background: #14b194;
+}
+
+.login:active {
+    background: #128C76;
+}
+
+.register {
+    width: 135px;
+    height: 54px;
+    background: #fff;
+    color: #F56B8D;
+    border: 1px solid #F56B8D;
+    border-radius: 1px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.register:hover {
+    background: #faa1b7;
+    border: 1px solid #faa1b7;
+    color: #fff;
+}
+
+.register:active {
+    background: #d699a8;
+    border-color: #d699a8;
+}
+
+.nav__btn {
+    display: none;
+    right: 14px;
+}
+
+#open__how,
+#open__investment {
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    background-color: rgb(242, 248, 246);
+    z-index: 105;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+ul#open__how li,
+ul#open__investment li{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    .header__container {
+        height: 60px;
+        padding: 0px 15px;
+    }
+
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .register {
+        margin-top: 30px;
+    }
+
+    .nav__btn {
+        display: block;
+        position: fixed;
+        z-index: 101;
+    }
+
+    .nav__links,
+    .header__btns {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    ul#open__how,
+    ul#open__investment {
+        width: 250px;
+        overflow-y: auto;
+    }
+
+    .header__menu {
+        top: 60px;
+        right: -100%;
+        opacity: 0;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        position: fixed;
+        max-width: 100%;
+        height: calc(100vh - 90px);
+        background-color: rgb(197, 250, 232);
+        height: calc(100vh);
+        gap: 50px;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .active {
+        left: 0;
+        right: 0px;
+        opacity: 1;     
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header__container {
+        height: 50px;
+    }
+
+    .header__menu {
+        top: 50px;
+    }
+
+    .header__logo {
+        font-size: 16px;
+    }
+
+    .nav__btn {
+        width: 30px;
+    }
+
+}
