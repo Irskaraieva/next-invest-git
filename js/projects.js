@@ -28,7 +28,7 @@ const cardsDates = [{
 
 function createContentTemplate(cardDate) {
     const article = `
-    <article id="card" class="card">                        
+    <article id="card" class="card" data-aos="flip-left">                        
     <header id="card__header" class="card__header">
     <div class="card__image">
         <img src='${cardDate.img}' alt="card-image" >
@@ -155,6 +155,7 @@ viewBtn.onclick = () => {
     };
         viewBtn.textContent = 'View All Projects';
         init(cardsDates);
+        window.scrollTo({ top: 500, behavior: 'smooth' })
     }
 };
 

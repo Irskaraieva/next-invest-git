@@ -65,3 +65,8 @@ const backToTopButton = document.querySelector('.back__to__top');
 backToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+AOS.init({
+  once: true
+});
