@@ -39,7 +39,7 @@
     align-items: center;
 }
 
-.nav__links > li {
+.nav__links>li {
     position: relative;
 }
 
@@ -55,7 +55,7 @@
     visibility: hidden;
     transition: .3s;
     max-height: 200px;
-  overflow-y: auto;
+    overflow-y: auto;
 }
 
 .open {
@@ -63,9 +63,14 @@
     visibility: visible;
 }
 
+.arrow-up {
+    transform: rotate(180deg);
+    transition: .3s ease;
+}
+
 .hidden span:hover {
     color: #128C76;
-    border-bottom: 1px solid rgba(0, 0, 0,  #128C76);
+    border-bottom: 1px solid rgba(0, 0, 0, #128C76);
 }
 
 .hidden span {
@@ -85,6 +90,12 @@
 .about__us {
     transition: .3s;
 }
+
+.investment__img,
+.how__works__img {
+    transition: .3s;
+}
+
 
 .investment:hover,
 .how__it__works:hover,
@@ -155,11 +166,11 @@
     background-color: rgb(242, 248, 246);
     z-index: 105;
     padding: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 ul#open__how li,
-ul#open__investment li{
+ul#open__investment li {
     text-align: center;
     display: flex;
     align-items: center;
@@ -167,15 +178,11 @@ ul#open__investment li{
     margin-bottom: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
 
     .header__container {
         height: 60px;
         padding: 0px 15px;
-    }
-
-    .header__logo {
-        font-size: 20px;
     }
 
     .register {
@@ -222,9 +229,16 @@ ul#open__investment li{
     .active {
         left: 0;
         right: 0px;
-        opacity: 1;     
+        opacity: 1;
     }
 }
+
+@media (max-width: 900px) {
+    .header__logo {
+        font-size: 22px;
+    }
+}
+
 
 @media (max-width: 500px) {
 

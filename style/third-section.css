@@ -3,7 +3,7 @@
     width: 100%;
 
     position: relative;
-    background-color: #ECF4FD;  
+    background-color: #ECF4FD;
 }
 
 .graph-group-img {
@@ -70,11 +70,11 @@
         height: 320px;
     }
 
-    .graph__container {      
+    .graph__container {
         padding: 0 15px;
     }
 
-    .graph__container__left-arrow{
+    .graph__container__left-arrow {
         width: 45px;
         height: 45px;
     }
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 1150px) {
-   
+
     .graph-wave-img {
         width: 320px;
         height: 220px;
@@ -109,7 +109,7 @@
 
     .graph-group-img {
         width: 100px;
-    }   
+    }
 }
 
 @media (max-width: 750px) {
@@ -136,7 +136,7 @@
 @media (max-width: 513px) {
 
     .graph {
-       height: 480px;
+        height: 480px;
     }
 
     .graph__container__left-arrow {
@@ -152,12 +152,12 @@
     }
 
     .graph__container__left h3 {
-        font-size: 22px;       
+        font-size: 22px;
         line-height: 30px;
     }
 
     .graph__container__left p {
-        font-size: 12px;        
+        font-size: 12px;
     }
 
     .graph__container__left {
@@ -176,4 +176,3 @@
         height: 220px;
     }
 }
-

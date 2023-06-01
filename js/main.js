@@ -2,29 +2,55 @@
 const investment = document.querySelector('.investment');
 const investmentImg = document.querySelector('.investment__img');
 const howItWorks = document.querySelector('.how__it__works');
+const howItWorksImg =  document.querySelector('.how__works__img');
 const investmentList = document.querySelector('#open__investment');
 const howItWorksList = document.querySelector('#open__how');
 
 investment.addEventListener('click', function() {
     investmentList.classList.toggle('open');
+    investmentImg.classList.toggle('arrow-up');
 
     if (investmentList.classList.contains('open')) {
         howItWorksList.classList.remove('open');
       }
 });
 
+investmentImg.addEventListener('click', function(e) {
+  e.stopPropagation();
+  investmentList.classList.toggle('open');
+  investmentImg.classList.toggle('arrow-up');
+
+  if (investmentList.classList.contains('open')) {
+      howItWorksList.classList.remove('open');
+    }
+});
+
 howItWorks.addEventListener('click', function() {
     howItWorksList.classList.toggle('open');
+    howItWorksImg.classList.toggle('arrow-up');
 
     if (howItWorksList.classList.contains('open')) {
         investmentList.classList.remove('open');
       }
 });
 
+howItWorksImg.addEventListener('click', function(e) {
+  e.stopPropagation();
+  howItWorksList.classList.toggle('open');
+  howItWorksImg.classList.toggle('arrow-up');
+
+  if (howItWorksList.classList.contains('open')) {
+      investmentList.classList.remove('open');
+    }
+});
+
+
 document.addEventListener('click', function(event) {
     if (!event.target.matches('.investment') && !event.target.matches('.how__it__works')) {
       investmentList.classList.remove('open');
       howItWorksList.classList.remove('open');
+      investmentImg.classList.remove('arrow-up');
+      howItWorksImg.classList.remove('arrow-up');
     }
 });
 
