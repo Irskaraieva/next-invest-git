@@ -64,7 +64,7 @@ const hideMenu = () => {
   const screenWidth = window.innerWidth;
   if (screenWidth < 1000 && showMenu.classList.contains('active')) {
     showMenu.classList.remove('active');
-    navBtnImg.src = './photo/menu-burger.svg';
+    navBtnImg.src = './photo/menu-icon.svg';
   }
 }
 
@@ -84,9 +84,9 @@ aboutBtn.onclick = () => {
 
 navBtn.onclick = () => {
   if (showMenu.classList.toggle('active')) {
-    navBtnImg.src = './photo/close.svg';
+    navBtnImg.src = './photo/close-round-icon.svg';
   } else {
-    navBtnImg.src = './photo/menu-burger.svg';
+    navBtnImg.src = './photo/menu-icon.svg';
   }
 };
 
@@ -95,7 +95,8 @@ navBtn.onclick = () => {
 window.addEventListener('resize', function () {
   const screenWidth = window.innerWidth;
   if (screenWidth > 1000 && showMenu.classList.contains('active')) {
-    hideMenu();
+    showMenu.classList.remove('active');
+    navBtnImg.src = './photo/menu-icon.svg';
   }
 });
 

@@ -161,11 +161,13 @@
 #open__investment {
     position: absolute;
     left: 50%;
+    top: 20px;
     width: 200px;
     transform: translateX(-50%);
-    background-color: rgb(242, 248, 246);
+    background-color: #fff;
+    border-radius: 3px;
     z-index: 105;
-    padding: 5px;
+    padding: 5px 0 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -175,7 +177,6 @@ ul#open__investment li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 1020px) {
@@ -195,13 +196,13 @@ ul#open__investment li {
         z-index: 101;
     }
 
-    .nav__links,
-    .header__btns {
-        display: flex;
+    .nav__links {
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-evenly;
         gap: 50px;
+    }
+
+    .header__btns {
+        align-items: baseline;
     }
 
     ul#open__how,
@@ -211,16 +212,17 @@ ul#open__investment li {
     }
 
     .header__menu {
-        top: 60px;
+        top: 0px;
+        padding-top: 60px;
         right: -100%;
         opacity: 0;
         justify-content: flex-start;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
         position: fixed;
         max-width: 100%;
-        height: calc(100vh - 90px);
-        background-color: rgb(197, 250, 232);
+        height: 100vh;
+        background-color: rgb(240, 240, 240);
         height: calc(100vh);
         gap: 50px;
         transition: opacity 0.5s ease-in-out;
@@ -244,10 +246,6 @@ ul#open__investment li {
 
     .header__container {
         height: 50px;
-    }
-
-    .header__menu {
-        top: 50px;
     }
 
     .header__logo {

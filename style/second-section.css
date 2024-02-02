@@ -13,9 +13,9 @@
     z-index: -5;
 }
 
-.second__section-container {    
+.second__section-container {
     position: relative;
-    max-width: 1920px;     
+    max-width: 1920px;
 }
 
 .second__section-header {
@@ -29,7 +29,7 @@
 .second__section-header h3 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 64px;   
+    line-height: 64px;
 }
 
 .second__section-header p {
@@ -41,14 +41,14 @@
 
 .projects {
     width: 100%;
-    padding: 0px 15px;   
+    padding: 0px 15px;
     display: grid;
-    grid-template-columns: 370px 370px 370px;   
-    gap: 40px 30px;    
+    grid-template-columns: 370px 370px 370px;
+    gap: 40px 30px;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-bottom: 280px; 
+    padding-bottom: 280px;
 }
 
 .card {
@@ -56,7 +56,7 @@
     height: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
     box-shadow: 0px 80px 120px rgba(51, 51, 51, 0.4);
     transition: .4s;
 }
@@ -87,7 +87,7 @@
     height: 50%;
     bottom: 0;
     right: 0;
-    left: 0;   
+    left: 0;
     font-family: 'Josefin Sans', serif;
     font-size: 16px;
     opacity: 0;
@@ -96,12 +96,12 @@
 
 .card__image {
     width: 100%;
-    height: 100%;  
+    height: 100%;
     z-index: -1;
 }
 
 .card__image img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -113,7 +113,7 @@
     line-height: 22px;
     padding: 24px;
     display: flex;
-    align-items: center;    
+    align-items: center;
     gap: 8px;
 }
 
@@ -136,21 +136,21 @@
     font-size: 16px;
     padding: 17px 24px 10px;
     width: 100%;
-    height: 160px;    
+    height: 160px;
 }
 
 .card__details-table li {
     display: flex;
     justify-content: space-between;
 }
-  
+
 .col-2 {
     font-weight: 700;
     text-align: right;
 }
-  
-.card__details {    
-    width: 100%; 
+
+.card__details {
+    width: 100%;
     position: relative;
 }
 
@@ -174,12 +174,12 @@
     font-weight: 700;
     height: 72px;
     width: 100%;
-    text-align: center;    
+    text-align: center;
     line-height: 72px;
     border-radius: 1px;
     transition: .3s;
     font-size: 16px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 .appear__btn:hover {
@@ -228,14 +228,14 @@
     font-weight: 700;
 }
 
-.invisible {    
+.invisible {
     opacity: 0;
     bottom: 0;
     height: -100%;
     transition: opacity 0.3s ease-in-out;
 }
 
-.visible {    
+.visible {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
@@ -262,7 +262,7 @@
 }
 
 .view-all:hover {
-    background:  #F56B8D;
+    background: #F56B8D;
     color: #fff;
 }
 
@@ -274,7 +274,7 @@
 
     .projects {
         padding: 0;
-        padding-bottom: 200px; 
+        padding-bottom: 200px;
     }
 
     .second__section-header {
@@ -283,9 +283,9 @@
 
     .second__section-header h3 {
         font-size: 36px;
-        line-height: 44px;   
+        line-height: 44px;
     }
-    
+
     .second__section-header p {
         font-size: 18px;
         line-height: 26px;
@@ -299,7 +299,7 @@
 }
 
 @media (max-width: 1200px) {
-    
+
     .projects {
         grid-template-columns: 30% 30% 30%;
         padding-bottom: 180px;
@@ -315,12 +315,12 @@
         height: 430px;
     }
 
-    .card__content {     
-        padding: 16px;  
+    .card__content {
+        padding: 16px;
         gap: 18px;
     }
 
-    .card__appear {        
+    .card__appear {
         font-size: 12px;
     }
 
@@ -328,25 +328,25 @@
         font-size: 22px;
         line-height: 26px;
     }
-    
+
     .card__content h4 {
         font-size: 14px;
     }
-    
+
     .card__content p {
         font-size: 14px;
         line-height: 20px;
     }
-    
+
     .progress::before {
         height: 6px;
         margin-bottom: 6px;
-    }    
-    
+    }
+
     .progress p {
         font-size: 12px;
     }
-    
+
     .card__details-table {
         font-size: 14px;
         padding: 16px;
@@ -355,7 +355,7 @@
     .appear__btn {
         height: 60px;
         line-height: 60px;
-        font-size: 13px;   
+        font-size: 13px;
     }
 
     .card__btns {
@@ -364,13 +364,13 @@
 
     .card__btns {
         line-height: 16px;
-        padding: 18px; 
+        padding: 18px;
         gap: 8px;
     }
 
     .card__left__span,
     .card__right__span {
-        font-size: 8px;        
+        font-size: 8px;
         padding: 3px 5px 0px 5px;
     }
 
@@ -390,24 +390,24 @@
         padding-bottom: 180px;
     }
 
-    .card__content {     
-        padding: 16px;  
+    .card__content {
+        padding: 16px;
         gap: 16px;
     }
-        
+
 }
 
 @media (max-width: 700px) {
 
-    .projects {         
-        padding-bottom: 140px; 
+    .projects {
+        padding-bottom: 140px;
     }
 
     .card {
         height: 400px;
     }
 
-    .card__content { 
+    .card__content {
         gap: 12px;
     }
 
@@ -428,9 +428,9 @@
 
     .second__section-header h3 {
         font-size: 22px;
-        line-height: 30px;   
+        line-height: 30px;
     }
-    
+
     .second__section-header p {
         font-size: 14px;
         line-height: 16px;
@@ -474,9 +474,9 @@
 
     .second__section-header h3 {
         font-size: 18px;
-        line-height: 24px;   
+        line-height: 24px;
     }
-    
+
     .second__section-header p {
         font-size: 14px;
         line-height: 16px;

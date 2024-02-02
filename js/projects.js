@@ -107,28 +107,6 @@ function init() {
 
 init(cardsDates);
 
-
-/*
-const viewBtn = document.querySelector('.view-all');
-viewBtn.onclick = () => {
-
-    function initAll() {
-        const fragment = document.createDocumentFragment();
-    
-        for (let i = 6; i < cardsDates.length; i++) {
-            const cardDate = cardsDates[i];
-
-            fragment.appendChild(createContentTemplate(cardDate));
-
-          }
-    
-        appendContent(fragment);
-    }
-    
-    initAll(cardsDates);
-    viewBtn.textContent = 'Show less';
-}
-*/
 const viewBtn = document.querySelector('.view-all');
 let isShown = false;
 
@@ -140,8 +118,6 @@ function initAll() {
   }
   appendContent(fragment);
 }
-
-
 
 viewBtn.onclick = () => {
 
@@ -158,45 +134,6 @@ viewBtn.onclick = () => {
         window.scrollTo({ top: 500, behavior: 'smooth' })
     }
 };
-
-
-/* card hover/active 
-
-const cardContainer = document.querySelector('#projects');
-
-
-const cards = document.querySelectorAll('.card');
-
-cards.forEach(card => {
-  const cardHeader = card.querySelector('.card__header');
-  const cardAppear = card.querySelector('.card__appear');
-  const cardContent = card.querySelector('.card__content');
-
-    card.addEventListener('mouseenter', () => {
-        cards.forEach(otherCard => {
-            const otherCardHeader = otherCard.querySelector('.card__header');
-            const otherCardAppear = otherCard.querySelector('.card__appear');
-            const otherCardContent = otherCard.querySelector('.card__content');
-
-            if (otherCard !== card) {
-                otherCardHeader.classList.remove('invisible');
-                otherCardAppear.classList.remove('visible');
-                otherCardContent.classList.remove('transform');
-            }
-        });
-
-        cardHeader.classList.add('invisible');
-        cardAppear.classList.add('visible');
-        cardContent.classList.add('transform');
-    });
-
-  card.addEventListener('mouseleave', () => {
-    cardHeader.classList.remove('invisible');
-    cardAppear.classList.remove('visible');
-    cardContent.classList.remove('transform');
-  });
-});
-*/
 
 const cardContainer = document.querySelector('#projects');
 
