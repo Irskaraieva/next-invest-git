@@ -28,7 +28,7 @@ const cardsDates = [{
 
 function createContentTemplate(cardDate) {
     const article = `
-    <article id="card" class="card" data-aos="flip-left">                        
+    <article id="card" class="card" data-aos="flip-left" data-aos-duration="800">                        
     <header id="card__header" class="card__header">
     <div class="card__image">
         <img src='${cardDate.img}' alt="card-image" >
